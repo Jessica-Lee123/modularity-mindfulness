@@ -19,11 +19,24 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "banner banner"
+  "main main";
+  gap: 1rem;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+header {
+  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
+  display: contents;
+  box-sizing: inherit;
 }
 
 .container {
