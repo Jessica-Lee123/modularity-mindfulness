@@ -20,13 +20,6 @@ html {
 body {
   margin: 0;
   padding: 1rem;
-  display: grid;
-  border-radius: .2rem
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-  "banner banner"
-  "main main";
-  gap: 1rem;
 }
 
 img {
@@ -40,6 +33,12 @@ header {
   box-sizing: inherit;
 }
 
+h1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 nav {
   grid-column: 3 /-1;
   grid-row: 3;
@@ -49,11 +48,12 @@ nav li {
   padding: 1rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: end;
+ul {
   list-style: none;
-  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+  margin-top: 0;
   padding: 0;
 }
 
