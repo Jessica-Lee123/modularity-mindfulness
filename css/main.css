@@ -56,7 +56,7 @@ li {
 }
 
 li a {
-  color: #3783a3
+  color: #3783a3;
 }
 
 .intro {
@@ -88,11 +88,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "banner banner banner "
-  "text text text";
+    "banner banner banner "
+    "text text text";
   grid-row-gap: 1rem;
   align-items: center;
-  border-bottom: .2rem solid #e2e2e2
+  border-bottom: .2rem solid #e2e2e2;
 }
 
 main img {
